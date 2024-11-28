@@ -1,0 +1,59 @@
+body {
+  background-color: #ffffff; /* Mírně jemnější černá pro oči */
+  height: 200vh; /* Nastavuje výšku stránky pro lepší posouvání */
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: Arial, sans-serif; /* Lepší výchozí font */
+  color: rgb(116, 182, 103); /* Barva textu */
+}
+
+/* Obsah stránky */
+.content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Fixní footer na spodku obrazovky */
+footer {
+  background-color: #1e1e1e; /* Kontrastní odstín pro odlišení od obsahu */
+  color: rgb(68, 159, 112);
+  text-align: center;
+  padding: 15px 0;
+  position: fixed; /* Fixní footer na spodku obrazovky */
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Jemný stín pro vizuální oddělení */
+}
+
+/* Odkazy v patičce */
+footer a {
+  color: #4caf50; /* Příjemná zelená barva */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Přechod při najetí myší */
+}
+
+footer a:hover {
+  color: #81c784; /* Světlejší zelená na hover */
+}
+
+/* Responsivní úpravy pro mobilní zařízení */
+@media (max-width: 768px) {
+  body {
+    font-size: 1rem; /* Zmenšení fontu na menších obrazovkách */
+  }
+
+  .content {
+    font-size: 1.2rem; /* Menší písmo pro obsah na mobilu */
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 0.9rem; /* Menší písmo v patičce na mobilu */
+  }
+}
